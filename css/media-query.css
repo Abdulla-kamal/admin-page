@@ -17,9 +17,17 @@
     .sections {
         display: block;
     }
+    .sections ul{
+        gap: 20px;
+    }
 
+   .sections ul li {
+      display: flex;
+      align-items: center;
+    }
    .sections ul li a{
-        font-size: 2vw;
+        font-size: 3vw;
+        padding: 1vw;
     }
 
     .sidebar {

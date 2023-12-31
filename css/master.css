@@ -1,0 +1,324 @@
+:root {
+  --main-color: #00b695;
+  --secondry-color: #019a80;
+  --background-color: #ddd;
+  --white-color: #fff;
+  --text-color: #625f5f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+h2 {
+  font-weight: bold;
+}
+/*  */
+/* Start Header  */
+header {
+  background-color: var(--main-color);
+  padding: 0 20px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  width: 20px;
+}
+header .logo img {
+  width: 100%;
+}
+header .title {
+  flex: 1;
+  color: white;
+  display: flex;
+  align-items: right;
+  position: relative;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+header .title h4 {
+  font-weight: bold;
+}
+
+/* Start Settings  */
+.settings {
+  position: fixed;
+  height: 150px;
+  width: 100px;
+  top: 110px;
+  background-color: var(--secondry-color);
+  padding: 20px;
+  right: -40px;
+  border-radius: 6px;
+  right: -100px;
+  z-index: 100000;
+  transition: 0.3s;
+}
+
+.settings.open {
+  right: 0px;
+}
+.settings .gaer-icon {
+  position: absolute;
+  padding: 10px;
+  background-color: var(--secondry-color);
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.settings .icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.settings .icon i {
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.settings .icon i.fa-sun {
+  background-color: var(--main-color);
+}
+.settings .icon i.fa-moon {
+  background-color: #000;
+}
+
+.settings .icon i.active {
+  opacity: 1;
+}
+/* End Settings  */
+
+/* End Header  */
+
+/* Start Main Page  */
+.main-page {
+  display: flex;
+  background-color: var(--secondry-color);
+}
+
+/* Start sidebar  */
+.sidebar {
+  width: 250px;
+  min-height: 95vh;
+  padding: 20px 0 !important;
+  background-color: var(--main-color);
+  flex:1;
+  position: relative;
+}
+
+.sidebar h3 {
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+.sidebar h3::before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  outline: solid 2px #fff;
+  z-index: 1;
+}
+.sidebar h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  bottom: -20px;
+  background-color: #fff;
+}
+
+.sidebar ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1;
+  width: 100%;
+}
+.sidebar ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sidebar ul li span {
+  margin-left: 5px;
+}
+
+.sidebar ul li:hover {
+  background-color: #3433334d;
+}
+
+.sidebar ul li.active {
+  background-color: #3433334d;
+}
+/* Start sidebar  */
+
+/* Start Data  */
+
+.main-page .data  {
+  display: flex;
+  flex-basis: 80%;
+}
+/* Start Form */
+
+.main-page .data form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.main-page .data form span  {
+  text-align: center;
+}
+
+.main-page .data form label {
+  display: inline-block;
+  width: 145px;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.main-page .data form input {
+  border: none;
+  padding: 5px 3px;
+  border-radius: 6px;
+}
+.main-page .data form button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--secondry-color);
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+.main-page .data form button:hover {
+  background-color: var(--main-color);
+  outline: 2px solid white;
+}
+/* End Form */
+/* Start Table */
+table {
+  flex: 1;
+  background-color: #190713cc;
+  background-color: var(--background-color);
+  color: white;
+  color: var(--text-color);
+  height: fit-content;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.main-page .data table th {
+  text-align: center;
+}
+
+table td {
+  text-align: center;
+  border-top: none;
+  padding: 20px;
+}
+
+table td button {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+table td button.add {
+  background-color: rgb(30 144 79 / 65%);
+}
+table td button.edit {
+  background-color: rgba(54, 141, 240, 0.65);
+}
+table td button.delete {
+  background-color: rgb(199 46 46 / 65%);
+}
+/* End Table */
+
+/* End Data  */
+
+/* End Main Page  */

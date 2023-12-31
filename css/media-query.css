@@ -1,6 +1,9 @@
 @media (max-width: 768px) {
     .main-page .data {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
 
     .main-page .data table {
@@ -10,6 +13,19 @@
     header .title h2, h4{
         font-size: 16px;
     }
+
+    .sections {
+        display: block;
+    }
+
+   .sections ul li a{
+        font-size: 2vw;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
 
     .sidebar  a{
         font-size: 14px;

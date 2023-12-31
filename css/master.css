@@ -55,35 +55,6 @@ h2 {
   font-weight: bold;
 }
 /*  */
-/* Start Header  */
-header {
-  background-color: var(--main-color);
-  padding: 0 20px;
-}
-header .container {
-  display: flex;
-  align-items: center;
-}
-header .logo {
-  width: 20px;
-}
-header .logo img {
-  width: 100%;
-}
-header .title {
-  flex: 1;
-  color: white;
-  display: flex;
-  align-items: right;
-  position: relative;
-  gap: 10px;
-  flex-direction: column;
-  padding: 20px;
-}
-
-header .title h4 {
-  font-weight: bold;
-}
 
 /* Start Settings  */
 .settings {
@@ -97,7 +68,7 @@ header .title h4 {
   border-radius: 6px;
   right: -100px;
   z-index: 100000;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .settings.open {
@@ -106,9 +77,9 @@ header .title h4 {
 .settings .gaer-icon {
   position: absolute;
   padding: 10px;
-  background-color: var(--secondry-color);
+  background-color:var(--secondry-color) ;
   left: -35px;
-  top: 50%;
+  top:50%;
   transform: translateY(-50%);
   color: #fff;
   cursor: pointer;
@@ -121,6 +92,7 @@ header .title h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .settings .icon i {
@@ -131,22 +103,85 @@ header .title h4 {
   line-height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.3s;
-  opacity: 0.5;
-}
-.settings .icon i.fa-sun {
-  background-color: var(--main-color);
-}
-.settings .icon i.fa-moon {
-  background-color: #000;
-}
+    transition: .3s;
+    opacity: .5;
+  }
+  .settings .icon i.fa-sun {
+    background-color: var(--main-color);
+  }
+  .settings .icon i.fa-moon {
+    background-color: #000;
+  }
+  
+  .settings .icon i.active {
+    opacity: 1;
+  }
+  /* End Settings  */
 
-.settings .icon i.active {
-  opacity: 1;
-}
-/* End Settings  */
 
-/* End Header  */
+  /* Start Header  */
+  header {
+    background-color: var(--main-color);
+    padding: 0 20px;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+  }
+  header .logo {
+    width: 20px;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .title {
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: right;
+    position: relative;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  header .title h4 {
+    font-weight: bold;
+  }
+
+  
+  /* End Header  */
+  /* Start Sections  */
+  .sections {
+    background-color: var(--secondry-color);
+    display: none;
+  }
+   .sections ul {
+      width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+   .sections ul li {
+      flex: 1;
+      text-align: center;
+      transition: all .3s;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 6px;
+      color: white;
+    }
+   .sections ul li a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+    text-decoration: none;
+    color: white;
+  }
+   .sections ul li.active {
+    background-color: #1115143d;
+  }
+  /* End Sections  */
 
 /* Start Main Page  */
 .main-page {

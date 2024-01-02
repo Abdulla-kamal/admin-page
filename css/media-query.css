@@ -1,44 +1,55 @@
 @media (max-width: 768px) {
-    .main-page .data {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
+  .main-page .data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 
-    .main-page .data table {
-        font-size: 2vw;
-    }
+  .main-page .data table {
+    font-size: 2vw;
+  }
 
-    header .title h2, h4{
-        font-size: 16px;
-    }
+  header .title h2,
+  h4 {
+    font-size: 16px;
+  }
 
-    .sections {
-        display: block;
-    }
-    .sections ul{
-        gap: 20px;
-    }
+  .sections {
+    display: block;
+  }
+  .sections ul {
+    gap: 20px;
+  }
 
-   .sections ul li {
-      display: flex;
-      align-items: center;
-    }
-   .sections ul li a{
-        font-size: 3vw;
-        padding: 1vw;
-    }
+  .sections ul li {
+    display: flex;
+    align-items: center;
+  }
+  .sections ul li a {
+    font-size: 3vw;
+    padding: 1vw;
+  }
 
-    .sidebar {
-        display: none;
-    }
+  .sidebar {
+    display: none;
+  }
 
+  .sidebar a {
+    font-size: 14px;
+  }
+  .sidebar li a i {
+    display: none;
+  }
 
-    .sidebar  a{
-        font-size: 14px;
-    }
-    .sidebar  li a i{
-        display: none;
-    }
+  .file-promp .intro {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .form-add-file span input#file,
+  .form-add-file span.name input {
+    width: -webkit-fill-available;
+  }
 }

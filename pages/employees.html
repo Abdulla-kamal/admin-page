@@ -19,9 +19,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/master.css" />
-    <link rel="stylesheet" href="../css/media-query.css">
+    <link rel="stylesheet" href="../css/media-query.css" />
   </head>
   <body dir="rtl">
+    <div class="overlay"></div>
     <div class="settings">
       <div class="gaer-icon">
         <i class="fa-solid fa-gear"></i>
@@ -55,40 +56,30 @@
         <div class="logo"><img src="../images/logo.webp" alt="" /></div>
       </div>
     </header>
-<!-- End Header -->
-<!-- Start Sections -->
-<div class="sections">
-  <div class="container">
-      <ul>
-        <li>
-          <a href="../index.html"
-            >المستخدمين</a
-          >
-        </li>
-        <li class="active">
-          <a href="employees.html"
-            >الموظفين</a
-          >
-        </li>
-        <li>
-          <a href="data.html"
-            >بيانات المستخدمين</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            >Files</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            >Plans</a
-          >
-        </li>
-      </ul>
-  </div>
-</div>
-<!-- End Sections -->
+    <!-- End Header -->
+    <!-- Start Sections -->
+    <div class="sections">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="../index.html">المستخدمين</a>
+          </li>
+          <li class="active">
+            <a href="employees.html">الموظفين</a>
+          </li>
+          <li>
+            <a href="data.html">بيانات المستخدمين</a>
+          </li>
+          <li>
+            <a href="#">Files</a>
+          </li>
+          <li>
+            <a href="#">Plans</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Sections -->
     <!-- Start Main Page -->
     <div class="main-page">
       <!-- Start sidebar -->
@@ -101,7 +92,7 @@
               <span class="hide"> المستخدمين</span></a
             >
           </li>
-          <li  class="active">
+          <li class="active">
             <a href="employees.html"
               ><i class="fa-solid fa-building-user"></i>
               <span class="hide"> الموظفين</span></a
@@ -128,63 +119,123 @@
       </div>
       <!-- End sidebar -->
       <!-- Start Data  -->
-      <div class="data">
-        <form action="">
-          <span class="number"
-            ><label for="number">رقم الموظف </label><input type="number" id="number"
-          /></span>
-          <span class="name"
-            ><label for="name">اسم الموظف</label
-            ><input type="text" id="name"
-          /></span>
-          <span class="section"
-            ><label for="section">القسم</label
-            ><input type="text" id="section"
-          /></span>
-          <button>بحث</button>
-        </form>
+      <div class="data" data-section="add-employees">
+        <div class="add-employees">
+          <button>اضافة موظف</button>
+        </div>
         <table class="table rounded">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Number</th>
               <th scope="col">Name</th>
-              <th scope="col">Add</th>
+              <th scope="col">Section</th>
+              <th scope="col">File</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">211</th>
               <td>Abdulla Kamal</td>
-              <td><button class="add">Add</button></td>
+              <td>CS</td>
+              <td><button class="file">file</button></td>
               <td><button class="edit">Edit</button></td>
               <td><button class="delete">Delete</button></td>
             </tr>
             <tr>
-              <th scope="row">2</th>
+              <th scope="row">546</th>
               <td>Abdulrahman Almansoury</td>
-              <td><button class="add">Add</button></td>
+              <td>IT</td>
+              <td><button class="file">file</button></td>
               <td><button class="edit">Edit</button></td>
               <td><button class="delete">Delete</button></td>
             </tr>
             <tr>
-              <th scope="row">3</th>
+              <th scope="row">443</th>
               <td>Moftah Ali</td>
-              <td><button class="add">Add</button></td>
+              <td>GD</td>
+              <td><button class="file">file</button></td>
               <td><button class="edit">Edit</button></td>
               <td><button class="delete">Delete</button></td>
             </tr>
             <tr>
-              <th scope="row">4</th>
+              <th scope="row">708</th>
               <td>Ibrahim Jamal</td>
-              <td><button class="add">Add</button></td>
+              <td>CN</td>
+              <td><button class="file">file</button></td>
               <td><button class="edit">Edit</button></td>
               <td><button class="delete">Delete</button></td>
             </tr>
-
           </tbody>
         </table>
+
+        <!-- Start File Promp -->
+        <div class="file-promp">
+          <spna class="close"></spna>
+          <div class="intro">
+            <div class="info">
+              <span class="name">Abdulle Kamal</span>
+              <span class="number">210</span>
+            </div>
+            <button class="add-file">Add File</button>
+          </div>
+          <table class="table rounded">
+            <thead>
+              <tr>
+                <th scope="col">File Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Size</th>
+                <th scope="col">Download</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">passport</th>
+                <td>pdf</td>
+                <td>100k</td>
+                <td><button class="edit">Download</button></td>
+                <td><button class="delete">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row">passport</th>
+                <td>pdf</td>
+                <td>100k</td>
+                <td><button class="edit">Download</button></td>
+                <td><button class="delete">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row">passport</th>
+                <td>pdf</td>
+                <td>100k</td>
+                <td><button class="edit">Download</button></td>
+                <td><button class="delete">Delete</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row">passport</th>
+                <td>pdf</td>
+                <td>100k</td>
+                <td><button class="edit">Download</button></td>
+                <td><button class="delete">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End File Promp -->
+        <!-- Start Add File -->
+        <div class="overlayForm"></div>
+        <form class="form-add-file">
+          <span class="close"></span>
+          <h2>اضافة ملف</h2>
+          <span class="name"
+            ><label for="name">اسم الملف </label><input type="text" id="name"
+          /></span>
+          <span class="select-file"><label for="file">اختر ملف</label><input type="file" id="file"></span> 
+          <button>اضافة</button>
+        </form>
+        <!-- End Add File -->
       </div>
       <!-- End Data  -->
     </div>

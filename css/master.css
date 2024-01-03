@@ -279,7 +279,6 @@ h2 {
 /* Start Data  */
 
 .main-page .data  {
-  display: flex;
   flex-basis: 80%;
 }
 /* Start Form */
@@ -289,6 +288,7 @@ h2 {
   flex-direction: column;
   gap: 40px;
   padding: 40px 20px;
+  align-items: center;
 }
 
 .main-page .data form span  {
@@ -313,6 +313,7 @@ h2 {
   padding: 20px;
   border-radius: 6px;
   display: flex;
+  width: 50%;
   justify-content: space-around;
 }
 
@@ -336,6 +337,7 @@ h2 {
   transition: all 0.3s;
   border: 2px solid white;
   border-radius: 6px;
+  width: 50%;
 }
 .main-page .data form button:hover {
   background-color: var(--main-color);
@@ -348,6 +350,7 @@ h2 {
 }
 .add-employees {
   padding: 20px;
+  width:45%;
   margin: auto;
 }
 
@@ -357,10 +360,11 @@ h2 {
   background-color: #308730;
   border: none;
   border-radius: 6px;
-  padding: 5px 10px;
+  padding: 5px 0;
   cursor: pointer;
   width: 200px;
   transition: .3s;
+  width: 100%;
 }
 
 .add-employees button:hover {
@@ -410,6 +414,46 @@ table td button.delete {
   background-color: rgb(199 46 46 / 65%);
 }
 /* End Table */
+
+/* Start Form Add Employee */
+.form-add-employee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: center;
+  z-index: 6;
+  display: none;
+}
+/* End Form Add Employee */
+
+/* Start Form Edit Employee */
+.form-edit-employee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: center;
+  display: none;
+  z-index: 6;
+}
+/* End Form Edit Employee */
 
 /* Start File Promp  */
 .file-promp {
@@ -498,7 +542,6 @@ table td button.delete {
   gap: 40px;
   padding: 40px 20px;
   z-index: 5;
-  transition: .3s;
   display: none;
 }
 .form-add-file span {

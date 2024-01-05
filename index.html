@@ -110,7 +110,7 @@
           <li>
             <a href="pages/data.html"
               ><i class="fa-solid fa-chart-simple fa-fw"></i>
-              <span class="hide"> بيانات المستخدمين</span></a
+              <span class="hide"> بيانات الموظفين</span></a
             >
           </li>
           <li>
@@ -129,6 +129,7 @@
       <!-- End sidebar -->
       <!-- Start Data  -->
       <div class="data">
+        <div class="overlayForm"></div>
         <form class="user">
           <span class="name"
             ><label for="name">اسم المستخدم </label><input type="text" id="name"
@@ -138,7 +139,7 @@
             ><input type="password" id="password"
           /></span>
           <span class="confirm"
-            ><label for="name">تأكيد كلمة المرور</label
+            ><label for="confirm">تأكيد كلمة المرور</label
             ><input type="password" id="confirm"
           /></span>
           <span class="radio-select">
@@ -153,39 +154,67 @@
           </span>
           <button>اضافة مستخدم</button>
         </form>
-        <table class="table rounded">
+        <!-- Start Edit User  -->
+        <form class="edit">
+          <div class="close"></div>
+          <span class="name"
+            ><label for="editName">اسم المستخدم </label><input type="text" id="editName"
+          /></span>
+          <span class="password"
+            ><label for="editPassword">كلمة المرور </label
+            ><input type="password" id="editPassword"
+          /></span>
+          <span class="confirm"
+            ><label for="editConfirm">تأكيد كلمة المرور</label
+            ><input type="password" id="editConfirm"
+          /></span>
+          <span class="radio-select">
+            <span class="admin">
+              <label for="editAdmin">مسؤول</label>
+              <input type="radio" id="editAdmin" name="permissio ">
+            </span>
+            <span class="user">
+              <label for="editUser">مستخدم</label>
+              <input type="radio" id="editUser" name="permissio ">
+            </span>
+          </span>
+          <button>تعديل</button>
+        </form>
+        <!-- Start Edit User  -->
+
+        <table class="table rounded user">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Edit</th>
-              <th scope="col">Delete</th>
+              <th scope="col">الرقم</th>
+              <th scope="col">اسم</th>
+              <th scope="col">تعديل</th>
+              <th scope="col">حذف</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
               <td>Abdulla Kamal</td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Abdulrahman Almansoury</td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>Moftah Ali</td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>Ibrahim Jamal</td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
 
           </tbody>

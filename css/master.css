@@ -281,9 +281,10 @@ h2 {
 .main-page .data  {
   flex-basis: 80%;
 }
-/* Start Form */
+/* Start Form User*/
 
-.main-page .data form.user {
+.main-page .data form.user,
+.data form.edit {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -314,6 +315,7 @@ h2 {
   border-radius: 6px;
   display: flex;
   width: 50%;
+  gap: 20px;
   justify-content: space-around;
 }
 
@@ -343,10 +345,25 @@ h2 {
   background-color: var(--main-color);
   outline: 2px solid white;
 }
-/* End Form */
+/* End Form User*/
+
+/* Start Edit User  */
+.data form.edit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: var(--main-color);
+  z-index: 10;
+  display: none;
+}
+/* End Edit User  */
+
 /* Start Add Emplyees */
 [data-section = "add-employees"] {
   flex-direction: column;
+  color: #fff;
 }
 .add-employees {
   padding: 20px;
@@ -377,7 +394,7 @@ table {
   background-color: #190713cc;
   background-color: var(--background-color);
   color: white;
-  color: var(--text-color);
+  color: #fff;
   height: fit-content;
   padding: 10px;
   overflow: hidden;
@@ -410,6 +427,11 @@ table td button.add {
 table td button.edit {
   background-color: rgba(54, 141, 240, 0.65);
 }
+
+table td button.download {
+  background-color: var(--secondry-color);
+}
+
 table td button.delete {
   background-color: rgb(199 46 46 / 65%);
 }
@@ -492,38 +514,6 @@ table td button.delete {
   transition: .3s;
 }
 
-.close {
-  width: 5vb;
-  height: 5vb;
-  border-radius: 50%;
-  background-color: rgb(207, 4, 4);
-  position: absolute;
-  right: -8px;
-  top: -8px;
-  cursor: pointer;
-}
-
-.close::before {
-  content: "";
-  width: 20px;
-  height: 5px;
-  background-color: white;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-.close::after {
-  content: "";
-  width: 20px;
-  height: 5px;
-  background-color: white;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
 /* End File Promp  */
 
 /* Start Form Add File */
@@ -564,6 +554,17 @@ table td button.delete {
   display: none;
 }
 
+/* End Form Add File */
+
+/* End Data  */
+
+/* End Main Page  */
+
+
+
+
+
+/* Start Close Button */
 .close {
   width: 5vb;
   height: 5vb;
@@ -595,9 +596,4 @@ table td button.delete {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-/* End Form Add File */
-
-/* End Data  */
-
-/* End Main Page  */
+/* End Close Button */

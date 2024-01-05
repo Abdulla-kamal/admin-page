@@ -88,7 +88,7 @@
         <ul>
           <li>
             <a href="../index.html"
-              ><i class="fa-regular fa-user fa-fw"></i>
+            ><i class="fa-regular fa-user fa-fw"></i>
               <span class="hide"> المستخدمين</span></a
             >
           </li>
@@ -101,7 +101,7 @@
           <li>
             <a href="data.html"
               ><i class="fa-solid fa-chart-simple fa-fw"></i>
-              <span class="hide"> بيانات المستخدم</span></a
+              <span class="hide"> بيانات الموظفين</span></a
             >
           </li>
           <li>
@@ -120,18 +120,19 @@
       <!-- End sidebar -->
       <!-- Start Data  -->
       <div class="data" data-section="add-employees">
+        <div class="overlayForm"></div>
         <div class="add-employees">
           <button>اضافة موظف</button>
         </div>
         <table class="table rounded">
           <thead>
             <tr>
-              <th scope="col">Number</th>
-              <th scope="col">Name</th>
-              <th scope="col">Section</th>
-              <th scope="col">File</th>
-              <th scope="col">Edit</th>
-              <th scope="col">Delete</th>
+              <th scope="col">الرقم</th>
+              <th scope="col">الاسم</th>
+              <th scope="col">القسم</th>
+              <th scope="col">الملف</th>
+              <th scope="col">تعديل</th>
+              <th scope="col">حذف</th>
             </tr>
           </thead>
           <tbody>
@@ -139,33 +140,33 @@
               <th scope="row">211</th>
               <td>Abdulla Kamal</td>
               <td>CS</td>
-              <td><button class="file">file</button></td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="file">ملف</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
             <tr>
               <th scope="row">546</th>
               <td>Abdulrahman Almansoury</td>
               <td>IT</td>
-              <td><button class="file">file</button></td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="file">ملف</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
             <tr>
               <th scope="row">443</th>
               <td>Moftah Ali</td>
               <td>GD</td>
-              <td><button class="file">file</button></td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="file">ملف</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
             <tr>
               <th scope="row">708</th>
               <td>Ibrahim Jamal</td>
               <td>CN</td>
-              <td><button class="file">file</button></td>
-              <td><button class="edit">Edit</button></td>
-              <td><button class="delete">Delete</button></td>
+              <td><button class="file">ملف</button></td>
+              <td><button class="edit">تعديل</button></td>
+              <td><button class="delete">حذف</button></td>
             </tr>
           </tbody>
         </table>
@@ -178,16 +179,16 @@
               <span class="name">Abdulle Kamal</span>
               <span class="number">210</span>
             </div>
-            <button class="add-file">Add File</button>
+            <button class="add-file">اضافة ملف</button>
           </div>
           <table class="table rounded">
             <thead>
               <tr>
-                <th scope="col">File Name</th>
-                <th scope="col">Type</th>
-                <th scope="col">Size</th>
-                <th scope="col">Download</th>
-                <th scope="col">Delete</th>
+                <th scope="col">اسم الملف</th>
+                <th scope="col">النوع</th>
+                <th scope="col">الحجم</th>
+                <th scope="col">تحميل</th>
+                <th scope="col">حذف</th>
               </tr>
             </thead>
             <tbody>
@@ -195,30 +196,30 @@
                 <th scope="row">passport</th>
                 <td>pdf</td>
                 <td>100k</td>
-                <td><button class="edit">Download</button></td>
-                <td><button class="delete">Delete</button></td>
+                <td><button class="download">تحميل</button></td>
+                <td><button class="delete">حذف</button></td>
               </tr>
               <tr>
                 <th scope="row">passport</th>
                 <td>pdf</td>
                 <td>100k</td>
-                <td><button class="edit">Download</button></td>
-                <td><button class="delete">Delete</button></td>
+                <td><button class="download">تحميل</button></td>
+                <td><button class="delete">حذف</button></td>
               </tr>
               <tr>
                 <th scope="row">passport</th>
                 <td>pdf</td>
                 <td>100k</td>
-                <td><button class="edit">Download</button></td>
-                <td><button class="delete">Delete</button></td>
+                <td><button class="download">تحميل</button></td>
+                <td><button class="delete">حذف</button></td>
               </tr>
 
               <tr>
                 <th scope="row">passport</th>
                 <td>pdf</td>
                 <td>100k</td>
-                <td><button class="edit">Download</button></td>
-                <td><button class="delete">Delete</button></td>
+                <td><button class="download">تحميل</button></td>
+                <td><button class="delete">حذف</button></td>
               </tr>
             </tbody>
           </table>
@@ -260,7 +261,6 @@
         <!-- End Click Edit Employee  -->
 
         <!-- Start Click Add File -->
-        <div class="overlayForm"></div>
         <form class="form-add-file">
           <span class="close"></span>
           <h2>اضافة ملف</h2>
@@ -282,5 +282,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/main.js"></script>
+    <script src="../js/employee.js"></script>
   </body>
 </html>

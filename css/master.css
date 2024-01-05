@@ -13,6 +13,7 @@
 
 body {
   background-color: var(--background-color);
+  position: relative;
   min-height: 100vh;
 }
 
@@ -55,7 +56,8 @@ h2 {
   font-weight: bold;
 }
 
-.overlay {
+.overlay,
+.overlayForm {
   position: absolute;
   top: 0;
   left: 0;
@@ -349,7 +351,7 @@ h2 {
 
 /* Start Edit User  */
 .data form.edit {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -439,7 +441,7 @@ table td button.delete {
 
 /* Start Form Add Employee */
 .form-add-employee {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -459,7 +461,7 @@ table td button.delete {
 
 /* Start Form Edit Employee */
 .form-edit-employee {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -479,7 +481,7 @@ table td button.delete {
 
 /* Start File Promp  */
 .file-promp {
-  position: absolute;
+  position: fixed;
   width: 70%;
   top: 50%;
   left: 50%;
@@ -518,7 +520,7 @@ table td button.delete {
 
 /* Start Form Add File */
 .form-add-file {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -541,17 +543,6 @@ table td button.delete {
 .form-add-file button {
   width: 50%;
   margin: auto;
-}
-
-.overlayForm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000bf;
-  z-index: 4;
-  display: none;
 }
 
 /* End Form Add File */

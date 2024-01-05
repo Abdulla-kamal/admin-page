@@ -92,6 +92,7 @@ let bodyHeight = document.body.scrollHeight;
 document.querySelector(".main-page").style.height = `${(
   bodyHeight - headerHeight
 ).toString()}px`;
+
 // End Main Page Height
 
 // End General Coding

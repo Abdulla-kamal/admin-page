@@ -94,14 +94,14 @@
           </li>
           <li class="active">
             <a href="employees.html"
-              ><i class="fa-solid fa-building-user"></i>
-              <span class="hide"> الموظفين</span></a
+              ><i class="fa-solid fa-folder-open"></i>
+              <span class="hide"> المجلدات</span></a
             >
           </li>
           <li>
             <a href="data.html"
               ><i class="fa-solid fa-chart-simple fa-fw"></i>
-              <span class="hide"> بيانات الموظفين</span></a
+              <span class="hide"> البيانات </span></a
             >
           </li>
           <li>
@@ -122,15 +122,15 @@
       <div class="data" data-section="add-employees">
         <div class="overlayForm"></div>
         <div class="add-employees">
-          <button>اضافة موظف</button>
+          <button>اضافة مجلد</button>
         </div>
         <table class="table rounded">
           <thead>
             <tr>
               <th scope="col">الرقم</th>
               <th scope="col">الاسم</th>
-              <th scope="col">القسم</th>
-              <th scope="col">الملف</th>
+              <th scope="col">الجهة</th>
+              <th scope="col">المجلد</th>
               <th scope="col">تعديل</th>
               <th scope="col">حذف</th>
             </tr>
@@ -140,7 +140,7 @@
               <th scope="row">211</th>
               <td>Abdulla Kamal</td>
               <td>CS</td>
-              <td><button class="file">ملف</button></td>
+              <td><button class="file">فتح</button></td>
               <td><button class="edit">تعديل</button></td>
               <td><button class="delete">حذف</button></td>
             </tr>
@@ -148,7 +148,7 @@
               <th scope="row">546</th>
               <td>Abdulrahman Almansoury</td>
               <td>IT</td>
-              <td><button class="file">ملف</button></td>
+              <td><button class="file">فتح</button></td>
               <td><button class="edit">تعديل</button></td>
               <td><button class="delete">حذف</button></td>
             </tr>
@@ -156,7 +156,7 @@
               <th scope="row">443</th>
               <td>Moftah Ali</td>
               <td>GD</td>
-              <td><button class="file">ملف</button></td>
+              <td><button class="file">فتح</button></td>
               <td><button class="edit">تعديل</button></td>
               <td><button class="delete">حذف</button></td>
             </tr>
@@ -164,7 +164,7 @@
               <th scope="row">708</th>
               <td>Ibrahim Jamal</td>
               <td>CN</td>
-              <td><button class="file">ملف</button></td>
+              <td><button class="file">فتح</button></td>
               <td><button class="edit">تعديل</button></td>
               <td><button class="delete">حذف</button></td>
             </tr>
@@ -229,15 +229,15 @@
         <!-- Start Click Add Employee  -->
         <form class="form-add-employee">
           <span class="close"></span>
-          <h2>اضافة موظف</h2>
+          <h2>اضافة مجلد</h2>
           <span class="name"
-            ><label for="number">رقم الموظف </label><input type="text" id="number"
+            ><label for="number">رقم المجلد </label><input type="text" id="number"
           /></span>
           <span class="name"
-            ><label for="name">اسم الموظف </label><input type="text" id="name"
+            ><label for="name">اسم المجلد </label><input type="text" id="name"
           /></span>
           <span class="name"
-            ><label for="name">قسم الموظف </label><input type="text" id="name"
+            ><label for="name">قسم مجلد </label><input type="text" id="name"
           /></span>
           <button>اضافة</button>
         </form>
@@ -246,15 +246,15 @@
         <!-- Start Click Edit Employee  -->
         <form class="form-edit-employee">
           <span class="close"></span>
-          <h2>تعديل موظف</h2>
+          <h2>تعديل مجلد</h2>
           <span class="name"
-            ><label for="number">رقم الموظف </label><input type="text" id="number"
+            ><label for="number">رقم مجلد </label><input type="text" id="number"
           /></span>
           <span class="name"
             ><label for="name">اسم الموظف </label><input type="text" id="name"
           /></span>
           <span class="name"
-            ><label for="name">قسم الموظف </label><input type="text" id="name"
+            ><label for="name">جهة المجلد </label><input type="text" id="name"
           /></span>
           <button>حفظ</button>
         </form>
